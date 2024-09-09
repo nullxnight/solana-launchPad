@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Style the container holding wallet buttons */
+.wallet-buttons-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+/* Style the main wallet button */
+.wallet-adapter-button {
+  background-color: #1b1d26; /* Dark background for the button */
+  color: white; /* White text */
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center; /* Vertically center text and icon */
+  justify-content: center; /* Horizontally center text and icon */
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Center the text and icons in the button */
+.wallet-adapter-button-text {
+  text-transform: uppercase; /* Capitalize text */
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Align text and icon in the button */
+.wallet-adapter-button-start-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.wallet-adapter-button-end-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Change background color on hover */
+.wallet-adapter-button:hover {
+  background-color: #14161f; /* Slightly darker on hover */
+}
+
+/* Style the button after selecting a wallet */
+.wallet-adapter-button-trigger {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Adjusting the size of the wallet icon inside the button */
+.wallet-adapter-button-start-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Style the modal background */
+.wallet-adapter-modal-wrapper {
+  background-color: rgba(0, 0, 0, 0.8); /* Darken the background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the modal box */
+.wallet-adapter-modal {
+  background-color: #1b1d26;
+  border-radius: 16px;
+  padding: 20px;
+  width: 34em;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+/* Style the modal header */
+.wallet-adapter-modal-header {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Style individual wallet options */
+.wallet-adapter-modal-list li {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease;
+  height: 2em;
+  width: 23em;
+}
+
+/* Change background on hover */
+.wallet-adapter-modal-list li:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Slightly lighter on hover */
+}
+
+/* Style the wallet icon */
+.wallet-adapter-modal-list li img {
+  width: 9%;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Style the wallet name */
+.wallet-adapter-modal-list li span {
+  font-size: 1.2em;
+  color: white;
+}
+
+/* Close button styling */
+.wallet-adapter-modal-button-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  .wallet-adapter-modal {
+    width: 90%; /* Adjust modal width for smaller screens */
+  }
+
+  .wallet-adapter-modal-header {
+    font-size: 1.5em; /* Slightly smaller text on mobile */
+  }
+
+  .wallet-adapter-modal-list li {
+    padding: 10px; /* Adjust padding for mobile */
+  }
+}
+/* Style the main wallet button */
+.wallet-adapter-button {
+  background-color: #1b1d26; /* Dark background for the button */
+  color: white; /* White text */
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center; /* Vertically center text and icon */
+  justify-content: center; /* Horizontally center text and icon */
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Align text and icon in the button */
+.wallet-adapter-button-start-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px; /* Space between icon and text */
+}
+
+/* Increased icon size */
+.wallet-adapter-button-start-icon img {
+  width: 30px !important; /* Increase icon size */
+  height: 30px !important; /* Increase icon size */
+}
+
+/* Center the icon and text for the end icon */
+.wallet-adapter-button-end-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the modal background */
+.wallet-adapter-modal-wrapper {
+  background-color: rgba(0, 0, 0, 0.8); /* Darken the background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the modal box */
+.wallet-adapter-modal {
+  background-color: #1b1d26;
+  border-radius: 16px;
+  padding: 20px;
+  width: 34em;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+/* Style the modal header */
+.wallet-adapter-modal-header {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Style individual wallet options */
+.wallet-adapter-modal-list li {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease;
+  height: 2em;
+  width: 23em;
+}
+
+/* Change background on hover */
+.wallet-adapter-modal-list li:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Slightly lighter on hover */
+}
+
+/* Style the wallet icon */
+.wallet-adapter-modal-list li img {
+  width: 24px !important; /* Increase wallet icon size */
+  height: 24px !important; /* Increase wallet icon size */
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Style the wallet name */
+.wallet-adapter-modal-list li span {
+  font-size: 1.2em;
+  color: white;
+}
+
+/* Close button styling */
+.wallet-adapter-modal-button-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  .wallet-adapter-modal {
+    width: 90%; /* Adjust modal width for smaller screens */
+  }
+
+  .wallet-adapter-modal-header {
+    font-size: 1.5em; /* Slightly smaller text on mobile */
+  }
+
+  .wallet-adapter-modal-list li {
+    padding: 10px; /* Adjust padding for mobile */
+  }
+}

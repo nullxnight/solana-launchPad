@@ -1,0 +1,49 @@
+
+.mainContent {
+    font-family: 'Bebas Neue', sans-serif;
+    color: white;
+    text-align: center;
+  }
+  
+  .mainTitle {
+    font-size: 4em;
+    margin-bottom: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .inputBox {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-family: 'Bebas Neue', sans-serif;
+    border: 2px solid #fff;
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    color: #fff; /* White text */
+    font-size: 1.2em;
+    outline: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .inputBox::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Lighter white placeholder */
+  }
+  
+  .inputBox:focus {
+    background-color: rgba(255, 255, 255, 0.2); /* Change background on focus */
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  }
+  
+  button{
+    height: 2.9em;
+    width: 24em;
+    border-radius: 8px;
+    font-family: 'Bebas Neue', sans-serif;
+    cursor: pointer;
+  }
